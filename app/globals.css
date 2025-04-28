@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  /* Dark Mode (Your requested black theme) */
+  --background: #000000;    /* Pure Black */
+  --foreground: #ffffff;    /* White (text) alt    #4ECDC4 */
+  --accent: #aaaaaa;       /* #aaaaaa Light Gray (accents)  #FF6B6B */
+  --muted: #888888;        /* #888888 Medium Gray (secondary text) */
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+@keyframes vibrate {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+.hover\:animate-vibrate:hover {
+  animation: vibrate 0.3s linear infinite;
+}
+
+@keyframes gradient-border {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-border {
+  background-size: 200% 200%;
+  animation: gradient-border 3s ease infinite;
+}
+
+@keyframes bounce-down {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  40% {
+    transform: translateY(-10px) scale(1.1);
+  }
+  60% {
+    transform: translateY(-5px) scale(1.05);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulse-right {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+.animate-pulse-right {
+  animation: pulse-right 1.5s infinite ease-in-out;
+}
+
+/* Enhance 3D effect on hover */
+.group:hover svg path:nth-child(2) {
+  transform: translateX(2px);
+  transition: transform 0.3s ease;
+}
+
+@keyframes barUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes barDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
