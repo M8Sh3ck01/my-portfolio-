@@ -9,22 +9,22 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Inventory Management System",
-    description: "A desktop system to manage stock levels, view reports, and monitor inventory performance.",
-    tech: ["Java", "JavaFX", "MySQL"],
-    github: "https://github.com/M8Sh3ck01",
-  },
-  {
     title: "Portfolio Website",
     description: "A personal website to showcase my skills, projects, and contact info.",
     tech: ["Next.js", "Tailwind CSS"],
-    github: "https://github.com/M8Sh3ck01",
+    github: "https://github.com/M8Sh3ck01/my-portfolio-",
   },
   {
     title: "Simple Calculator App",
     description: "A basic calculator built for practicing Java GUI concepts.",
     tech: ["Java", "JavaFX"],
     github: "https://github.com/M8Sh3ck01/basic-calculator",
+  },
+  {
+    title: "Inventory Management System",
+    description: "A desktop system to manage stock levels, view reports, and monitor inventory performance.",
+    tech: ["Java", "JavaFX", "MySQL"],
+    github: "https://github.com/M8Sh3ck01/Inventory_management_system",
   },
 ];
 
@@ -88,7 +88,8 @@ export default function Projects() {
                 className="inline-flex items-center text-sm mt-2">
 
                 <GitBranch className="w-4 h-4 mr-1 text-[#4ECDC4]" />
-                View on GitHub
+                <span className='text-[#4ECDC4]'>View on GitHub</span>
+                
               </a>
             )}
           </div>
