@@ -1,4 +1,5 @@
-import { User, Code2, Goal, Briefcase } from 'lucide-react';
+import { User, Briefcase } from 'lucide-react';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -25,8 +26,8 @@ export default function About() {
             ></span>
           </div>
           <p className="text-lg">
-  <strong className="text-xl">I</strong>'m Misheck Champopa, a 22-year-old aspiring software developer and ICT student at Mzuzu University. My goal is to continue improving my skills and working on projects that utilize the latest technologies and AI tools.
-</p>
+            <strong className="text-xl">I</strong>&apos;m Misheck Champopa, a 22-year-old aspiring software developer and ICT student at Mzuzu University. My goal is to continue improving my skills and working on projects that utilize the latest technologies and AI tools.
+          </p>
         </div>
 
         <div className="flex gap-4">
@@ -38,7 +39,7 @@ export default function About() {
           </div>
           <p className="text-lg">
             I specialize in <strong>JavaScript</strong>, <strong>React</strong>, <strong>Next.js</strong>, and <strong>Tailwind CSS</strong>,
-            but I'm also gaining experience with <strong>Vue.js</strong> and exploring mobile development.
+            but I&apos;m also gaining experience with <strong>Vue.js</strong> and exploring mobile development.
           </p>
         </div>
 
@@ -92,7 +93,7 @@ export default function About() {
             ></span>
           </div>
           <p className="text-lg">
-            Explore my work in the <a href="/projects" className="underline text-[#4ECDC4]"><strong>projects section</strong></a>.
+            Explore my work in the <Link href="/projects" className="underline text-[#4ECDC4]"><strong>projects section</strong></Link>.
           </p>
         </div>
       </div>

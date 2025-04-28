@@ -7,14 +7,6 @@
   --accent: #aaaaaa;       /* #aaaaaa Light Gray (accents)  #FF6B6B */
   --muted: #888888;        /* #888888 Medium Gray (secondary text) */
 }
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-accent: var(--accent);
-  --color-muted: var(--muted);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 
 
